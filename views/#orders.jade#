@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  div.container
+    table.table
+      tr
+        th Id
+        th Date
+        th Name
+        th Address
+      for val in orders
+        tr
+          td: p= val._id
+          td: p= val.orderDate
+          td: P= val.shipName
+          td: P= val.shipAddress
+http://178.62.15.16:3000/

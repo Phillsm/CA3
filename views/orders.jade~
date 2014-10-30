@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  div.container
+    table.table
+      tr
+       th Test
