@@ -10,7 +10,7 @@ block content
         th Address
       for val in orders
         tr
-          td: p= val._id
+          td: a(href= 'http://178.62.15.16:3000/order/#{val._id}')= val._id
           td: p= val.orderDate
           td: P= val.shipName
           td: P= val.shipAddress

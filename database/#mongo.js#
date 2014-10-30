@@ -1,0 +1,15 @@
+var mongoose = require('mongoose');
+var model = require('model');
+
+
+module.exports.connect = function(){
+  mongoose.connect("mongodb://localhost/northwind");
+
+  mongoose.connection.once('open',function(){
+    console.log("connected");
+  })
+}
+module.exports.close = function(){
+  mongoose.connection.close();
+}
+
