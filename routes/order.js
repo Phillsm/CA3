@@ -2,9 +2,15 @@ var db = require('../database/model')
 /* GET home page. */
 
 function orderHandler (req,res){
-  console.log("order called")
   db.OrderModel.findById(req.params.id,function(err,order){
-    res.render('order',{order : order})
+    db.DetailsModel.find({order: order._id})
+    .populate('product')
+    .exec(function(err,details){
+      details.forEach(function(elem){
+        elem.totalPrice = elem.unitPrice * elem.quantity
+      })
+      res.render('order',{order : order, details : details})
+    })
   })
 }
 

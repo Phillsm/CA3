@@ -2,5 +2,29 @@ extends layout
 
 block content
   div.container
-    table.table
-      p= order
+    div#order.col-md-6
+      h2#orderid Id: #{order._id}
+      h2#ordercustomer Name: #{ order.customer}
+      h2#orderdate Date: #{ order.orderDate}
+      h2#orderrequired Require: #{ order.requiredDate}
+      h2#ordershipped Shipped: #{ order.shippedDate}
+      h2#ordername Shipname: #{ order.shipName}
+      h2#orderadress Address: #{ order.shipAddress}
+      h2#ordercity City: #{order.shipCity}
+      h2#orderzip Zip: #{order.shipPostalCode}
+      h2#ordercountry Country: #{order.shipCountry}
+    div#table.container
+      table.table
+        tr
+          th Product
+          th UnitPrice
+          th Quantity
+          th Discount
+          th Price  
+        for detail in details
+          tr
+            td: p= detail.product.name
+            td: p= detail.unitPrice
+            td: p= detail.quantity 
+            td: p= detail.discount
+            td: p= detail.totalPrice
