@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div.container
+    div.col-md-6
+    div.col-md-6
+  p= employee
+  br
+  div#backbutton.text-center  
+    a.btn.btn-primary.bottom(onclick='history.go(-1);') back

@@ -10,7 +10,7 @@ var users = require('./routes/users');
 var orders = require('./routes/orders');
 var order = require('./routes/order');
 var customer = require('./routes/customer')
-
+var employee = require('./routes/employee')
 var app = express();
 
 // view engine setup
@@ -30,7 +30,7 @@ app.use('/', orders);
 app.use('/users', users);
 app.get('/order/:id',order);
 app.get('/customer/:id',customer);
-
+app.get('/employee/:id',employee);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
