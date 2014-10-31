@@ -4,12 +4,12 @@ block content
   div.container
     div#order.col-md-6
       h3#orderid Id: #{order._id}
-      h2#ordercustomer Name: #{ order.customer.companyName}
-      h2#ordercustomercontact Contact: #{ order.customer.contactName}
-      h2#orderemployee Employee: #{ order.employee.firstName}
-      h3#ordercustomer Name: #{ order.customer}
+      h3#ordercustomer: a(href='http://178.62.15.16:3000/customer/#{order.customer._id}') Name: #{ order.customer.companyName}
+      h3#ordercustomercontact Contact: #{ order.customer.contactName}
+      h3#orderemployee: a(href='http://178.62.15.16:3000/employee/#{order.employee._id}') Employee: #{ order.employee.firstName}
       h3#orderdate Date: #{ order.orderDate}
       h3#orderrequired Require: #{ order.requiredDate}
+    div.col-md-6
       h3#ordershipped Shipped: #{ order.shippedDate}
       h3#ordername Shipname: #{ order.shipName}
       h3#orderadress Address: #{ order.shipAddress}
@@ -34,4 +34,4 @@ block content
             td: p= detail.discount
             td: p= detail.totalPrice
 
-       a.btn.btn-warning.bottom(href='http://localhost:3000/') back
+       a.btn.btn-warning.bottom(href='http://178.62.15.16:3000/') back

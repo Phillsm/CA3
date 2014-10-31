@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var orders = require('./routes/orders');
 var order = require('./routes/order');
+var customer = require('./routes/customer')
 
 var app = express();
 
@@ -28,6 +29,7 @@ mongo.connect();
 app.use('/', orders);
 app.use('/users', users);
 app.get('/order/:id',order);
+app.get('/customer/:id',customer);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
