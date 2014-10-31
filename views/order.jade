@@ -4,7 +4,9 @@ block content
   div.container
     div#order.col-md-6
       h2#orderid Id: #{order._id}
-      h2#ordercustomer Name: #{ order.customer}
+      h2#ordercustomer Name: #{ order.customer.companyName}
+      h2#ordercustomercontact Contact: #{ order.customer.contactName}
+      h2#orderemployee Employee: #{ order.employee.firstName}
       h2#orderdate Date: #{ order.orderDate}
       h2#orderrequired Require: #{ order.requiredDate}
       h2#ordershipped Shipped: #{ order.shippedDate}
@@ -28,3 +30,4 @@ block content
             td: p= detail.quantity 
             td: p= detail.discount
             td: p= detail.totalPrice
+
