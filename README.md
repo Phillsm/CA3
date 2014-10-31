@@ -1,5 +1,6 @@
 
 o A design description of the chosen design (both on front and backend).
+
 Front: Bootstrap, CSS
 
 Back: Express, mongoose, node.js
