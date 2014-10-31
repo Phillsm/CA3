@@ -9,6 +9,7 @@ Vi kunne med fordel have benyttet node-restful for at løse opgaven endnu hurtig
 Ex: http://www.youtube.com/watch?v=p-x6WdwaJco
  
 o A section stating who did what
+
 Charles: Design, herunder Bla. Bootstrap og menu. Bonus 1
 Anders: Bonus 1, 
 Phillip: Bonus 1,
