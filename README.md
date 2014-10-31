@@ -1,23 +1,26 @@
 
-o A design description of the chosen design (both on front and backend).
-
-Front: Bootstrap, CSS
+Design
+-----------------------------------------------------------------------
+Front: Bootstrap, CSS, Jade
 
 Back: Express, mongoose, node.js
 
 Vi kunne med fordel have benyttet node-restful for at løse opgaven endnu hurtigere, samt med mindre kode. Dette ville nok have gjort opgaven betydelig mindre kompliceret og vi valgte derfor at undlade dette.
 Ex: http://www.youtube.com/watch?v=p-x6WdwaJco
  
-o A section stating who did what
+Arbejdsfordeling
+--------------------------------
 
-Charles: Design, herunder Bla. Bootstrap og menu. Bonus 1
+Arbejde er forgået hovedsageligt på en computer, i samlet gruppe i fælles diskution.
 
-Anders: Bonus 1,
+* Charles: Bootstrap, Jade, Node, express,
 
-Phillip: Bonus 1,
+* Anders: Bootstrap, Jade, Node, Mongoose/mongo, express 
 
-Marcus: Bonus 1,
+* Phillip: Bootstrap, Jade, Node, Mongoose/mongo, express  
 
-o A description of what you have added (bonus tasks and/or part 3)
+* Marcus: Bootstrap, Jade, Node, express  
 
+Bonus Opgaver
+-----------------------------------------------------------------
 Bonus 1
