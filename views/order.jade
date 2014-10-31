@@ -3,16 +3,18 @@ extends layout
 block content
   div.container
     div#order.col-md-6
-      h2#orderid Id: #{order._id}
-      h2#ordercustomer Name: #{ order.customer}
-      h2#orderdate Date: #{ order.orderDate}
-      h2#orderrequired Require: #{ order.requiredDate}
-      h2#ordershipped Shipped: #{ order.shippedDate}
-      h2#ordername Shipname: #{ order.shipName}
-      h2#orderadress Address: #{ order.shipAddress}
-      h2#ordercity City: #{order.shipCity}
-      h2#orderzip Zip: #{order.shipPostalCode}
-      h2#ordercountry Country: #{order.shipCountry}
+      h3#orderid Id: #{order._id}
+      h3#ordercustomer Name: #{ order.customer}
+      h3#orderdate Date: #{ order.orderDate}
+      h3#orderrequired Require: #{ order.requiredDate}
+      h3#ordershipped Shipped: #{ order.shippedDate}
+      h3#ordername Shipname: #{ order.shipName}
+      h3#orderadress Address: #{ order.shipAddress}
+      h3#ordercity City: #{order.shipCity}
+      h3#orderzip Zip: #{order.shipPostalCode}
+      h3#ordercountry Country: #{order.shipCountry}
+      br
+      br
     div#table.container
       table.table
         tr
@@ -28,3 +30,5 @@ block content
             td: p= detail.quantity 
             td: p= detail.discount
             td: p= detail.totalPrice
+
+       a.btn.btn-warning.bottom(href='http://localhost:3000/') back
