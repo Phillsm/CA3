@@ -6,9 +6,9 @@ var mongo = require('../database/mongo')
 /* GET home page. */
 
 router.get('/', function(req,res) {
-  db.OrderModel.find(function(err,orders){
+  db.OrderModel.find({}).sort({orderDate:'desc'}).exec((function(err,orders){
     res.render('orders',{orders : orders})
-  })
+  }))
 })
 
 
